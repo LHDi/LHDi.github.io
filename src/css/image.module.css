@@ -1,0 +1,13 @@
+.border {
+  background-image: url(../images/MyImgBorder.svg);
+  padding: 5px;
+  overflow: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.border > img {
+  border-radius: 0 0 5px 5px;
+}

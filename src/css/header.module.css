@@ -1,0 +1,40 @@
+.header {
+  background: #333333;
+  margin-bottom: 1.45rem;
+  padding: 2.45rem 1.0875rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  transition: 0.3s padding ease-in;
+}
+.sticky {
+  padding: 1em 0.5em;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  background-image: url(../images/MyIMG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin: 0 0.5em;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.sticky .avatar {
+  opacity: 1;
+}
