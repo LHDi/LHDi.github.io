@@ -1,12 +1,14 @@
-// @ts-ignore
 import React from "react";
-
 import Layout from "../components/layout";
 import MyImage from "../components/myImage";
 import SEO from "../components/seo";
+import SocialMediaButton from '../components/socialMediaButton';
+import Carousel from '../components/carousel';
+import ProjectsGrid from '../components/projectsGrid';
+
+
 //@ts-ignore
 import style from '../css/index.module.css';
-import SocialMediaButton from '../components/socialMediaButton';
 // @ts-ignore
 import TwitterIcon from '../images/Twitter.svg';
 // @ts-ignore
@@ -15,7 +17,6 @@ import LinkedInIcon from '../images/LinkedIn.svg';
 import MediumIcon from '../images/Medium.svg';
 // @ts-ignore
 import GitHubIcon from '../images/GitHub.svg';
-import Carousel from '../components/carousel';
 
 
 // @ts-ignore
@@ -43,6 +44,12 @@ import NodeJSImage from '../../Technologies/NodeJS.png';
 // @ts-ignore
 import ReactJSImage from '../../Technologies/React.png';
 
+// @ts-ignore
+import Avtr from '../../Projects/Avtr.png';
+// @ts-ignore
+import soundVisualizer from '../../Projects/sound-visualizer.png';
+
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Mohammed E. Baci" />
@@ -61,7 +68,7 @@ const IndexPage = () => (
             <small>Future Engineer.</small>
           </div>
           <p>
-            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec maximus turpis. Suspendisse consectetur elit maximus suscipit volutpat.
+            I Love to Learn and Trying to learn something about everything and everything about something. I love problems <span role='img' aria-label='wink' >😉</span> especially the ones that related to computers. I started my dev journey in 2015. I love designing beautiful UIs and creating them.
           </p>
         </div>
         <div id={style.pointer}></div>
@@ -91,6 +98,16 @@ const IndexPage = () => (
         NextJSImage,
         NodeJSImage,
         ReactJSImage,
+      ]} />
+      <div style={{ height: '5px', width: '80px', background: 'white', borderRadius: '5px', margin: '1em auto' }} />
+
+      <h2>Some of the things that I've created <span role='img' aria-label='down-arrow' >⬇️</span></h2>
+      <ProjectsGrid projects={[
+        { name: 'My portfolio.', techs: ['react', 'Gatsby', 'HTML', 'CSS'], repo: 'https://github.com/LHDi/me', url: '/' },
+        { name: 'Avtr - avatar maker.', image: Avtr, techs: ['react', 'SVG', 'HTML', 'CSS'], repo: 'https://github.com/LHDi/Avtr', url: 'https://LHDi.github.io/Avtr' },
+        { name: 'Sound visualizer.', image: soundVisualizer, techs: ['react', 'ThreeJS', 'react-three-fiber', 'Web Audio'], repo: 'https://github.com/LHDi/sound-visualizer', url: 'https://LHDi.github.io/sound-visualizer' },
+        { name: 'lhd-hooks - React Hooks.', techs: ['react', 'DOM', 'CSS'], repo: 'https://github.com/LHDi/lhd-hooks', url: 'https://LHDi.github.io/lhd-hooks' },
+        { name: 'AQr - Qr tracer.', techs: ['react', 'WebRTC', 'jsqr', 'Web Workers'], repo: 'https://github.com/LHDi/AQr', url: 'https://LHDi.github.io/AQr' },
       ]} />
     </div>
   </Layout>

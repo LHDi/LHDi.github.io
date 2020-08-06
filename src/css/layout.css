@@ -32,6 +32,15 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
 }
 
+::-moz-selection {
+  background: white;
+  color: #333333;
+}
+::selection {
+  background: white;
+  color: #333333;
+}
+
 article,
 aside,
 details,
@@ -639,6 +648,7 @@ h6 {
 footer {
   position: absolute;
   bottom: 0;
+  font-size: 0.8em;
 }
 @media only screen and (max-width: 480px) {
   html {

@@ -44,9 +44,9 @@ const Carousel = ({ images = [] }) => {
     return (
         <div id={style.container}>
             <div ref={slider} id={style.images}>
-                {images.map(function (image) {
+                {images.map(function (image, i) {
                     return (
-                        <div className={style.element}>
+                        <div key={i} className={style.element}>
                             <div style={{ width: `${Math.floor(Math.random() * 60) + 20}%` }} id={style.topBorder} />
                             <div style={{ height: `${Math.floor(Math.random() * 80) + 10}%` }} id={style.leftBorder} />
                             <img src={image} alt={image} />

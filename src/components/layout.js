@@ -31,14 +31,14 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          padding: `0 1.0875rem 2.45rem`,
         }}
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()}, Built by <a href='/'>ME</a> with ❤️ & The Great
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org" target="_blank" rel="noreferrer">Gatsby</a>
         </footer>
       </div>
     </>
