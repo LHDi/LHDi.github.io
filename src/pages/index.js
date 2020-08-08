@@ -68,7 +68,7 @@ const IndexPage = () => (
             <small>Future Engineer.</small>
           </div>
           <p>
-            I Love to Learn and Trying to learn something about everything and everything about something. I love problems <span role='img' aria-label='wink' >😉</span> especially the ones that related to computers. I started my dev journey in 2015. I love designing beautiful UIs and creating them.
+            I Love to Learn and Trying to learn something about everything and everything about something. I love problems <span role='img' aria-label='wink' >😉</span> especially the ones related to computers. I started my dev journey in 2015. I love designing beautiful UIs and creating them.
           </p>
         </div>
         <div id={style.pointer}></div>
