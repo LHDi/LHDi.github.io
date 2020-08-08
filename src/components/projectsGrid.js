@@ -7,7 +7,7 @@ const ProjectsGrid = ({ projects = [] }) => {
     return (
         <div className={style.grid}>
             {projects.map(project =>
-                <ProjectCard {...project} />
+                <ProjectCard key={project.name} {...project} />
             )}
         </div>
     );
