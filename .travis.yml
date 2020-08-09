@@ -1,15 +1,16 @@
 language: node_js
 before_script:
   - npm install -g gatsby-cli
-  - composer self-update -q
-  - if [ -n "$GH_TOKEN" ]; then composer config github-oauth.github.com ${GH_TOKEN}; fi;
-  - composer show -i
 node_js:
   - "10"
+script:
+  - gatsby build --prefix-paths
 deploy:
-  provider: script
+  provider: pages
   # Note: change "docs" to the directory where your gatsby-site lives, if necessary
   script: yarn install && yarn run deploy
   cleanup: false
+  github_token: $GH_TOKEN
+  local_dir: build
   on:
     branch: master
