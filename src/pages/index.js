@@ -65,7 +65,7 @@ const IndexPage = () => (
             <h2 style={{ margin: 0, fontSize: '1.2em', color: '#ffffffcc' }}>
               Front-End & Mobile developer.
           </h2>
-            <small>Future Engineer.</small>
+            <small><span role='img' aria-label='algeria-arrow' >🇩🇿</span> Algeria.</small>
           </div>
           <p>
             I Love to Learn and Trying to learn something about everything and everything about something. I love problems <span role='img' aria-label='wink' >😉</span> especially the ones related to computers. I started my dev journey in 2015. I love designing beautiful UIs and creating them.
