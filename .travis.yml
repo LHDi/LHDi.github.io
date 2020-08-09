@@ -1,7 +1,9 @@
 language: node_js
 before_script:
   - npm install -g gatsby-cli
+  - composer self-update -q
   - if [ -n "$GH_TOKEN" ]; then composer config github-oauth.github.com ${GH_TOKEN}; fi;
+  - composer show -i
 node_js:
   - "10"
 deploy:
