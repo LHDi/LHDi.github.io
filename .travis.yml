@@ -6,6 +6,7 @@ node_js:
 deploy:
   provider: script
   script: yarn install && yarn run deploy
+  github_token: $GH_TOKEN
   cleanup: false
   on:
     branch: master
