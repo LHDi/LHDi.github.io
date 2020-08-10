@@ -1,0 +1,176 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form > *:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+.nameInput {
+  position: relative;
+  height: 3em;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 4px;
+}
+
+.nameInput > div,
+.messageTextarea > div {
+  position: absolute;
+  border-radius: 4px;
+  background-color: white;
+  transition: 0.3s all ease-in-out;
+}
+
+.nameInput .topBorder {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+
+.nameInput .leftBorder {
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+}
+
+.nameInput .rightBorder {
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 50%;
+}
+
+.nameInput .bottomBorder {
+  bottom: 0;
+  left: 0;
+  width: 25%;
+  height: 4px;
+}
+
+.nameInput input {
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0 0.5em;
+}
+
+.nameInput input:focus,
+.messageTextarea textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.nameInput:focus-within .bottomBorder {
+  width: 100%;
+}
+
+.nameInput:focus-within .rightBorder {
+  height: 100%;
+}
+
+.messageTextarea {
+  position: relative;
+  height: 9em;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 4px;
+}
+.messageTextarea textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  padding: 0.5em;
+  background-color: #333;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.messageTextarea .topBorder {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 4px;
+}
+
+.messageTextarea .leftBorder {
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 50%;
+}
+
+.messageTextarea .rightBorder {
+  right: 0;
+  top: 0;
+  width: 4px;
+  height: 75%;
+  transition-delay: 0.3s;
+}
+
+.messageTextarea .bottomBorder {
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+}
+.messageTextarea:focus-within .leftBorder,
+.messageTextarea:focus-within .rightBorder {
+  height: 100%;
+}
+
+.messageTextarea:focus-within .bottomBorder {
+  transition-delay: 0.3s;
+  width: 100%;
+}
+
+.messageTextarea:focus-within .rightBorder {
+  transition-delay: 0s;
+}
+
+.sendButton {
+  position: relative;
+  align-self: flex-end;
+  padding-bottom: 4px;
+}
+
+.sendButton button {
+  color: white;
+  font-weight: bolder;
+  font-size: 1.2em;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.sendButton .bottomBorder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 50%;
+  border-radius: 4px;
+  background-color: white;
+  transition: 0.3s all ease-in-out;
+}
+
+.sendButton:focus-within .bottomBorder {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .form {
+    width: 400px;
+  }
+}

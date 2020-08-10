@@ -48,6 +48,7 @@ import ReactJSImage from '../../Technologies/React.png';
 import Avtr from '../../Projects/Avtr.png';
 // @ts-ignore
 import soundVisualizer from '../../Projects/sound-visualizer.png';
+import ContactMe from '../components/contactMe';
 
 
 const IndexPage = () => (
@@ -109,6 +110,10 @@ const IndexPage = () => (
         { name: 'lhd-hooks - React Hooks.', techs: ['react', 'DOM', 'CSS'], repo: 'https://github.com/LHDi/lhd-hooks', url: 'https://LHDi.github.io/lhd-hooks' },
         { name: 'AQr - Qr tracer.', techs: ['react', 'WebRTC', 'jsqr', 'Web Workers'], repo: 'https://github.com/LHDi/AQr', url: 'https://LHDi.github.io/AQr' },
       ]} />
+      <div style={{ height: '5px', width: '80px', background: 'white', borderRadius: '5px', margin: '1em auto' }} />
+
+      <h2>Contact Me. <span role='img' aria-label='down-arrow' >⬇️</span></h2>
+      <ContactMe />
     </div>
   </Layout>
 );

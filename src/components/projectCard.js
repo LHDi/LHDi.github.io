@@ -5,7 +5,7 @@ import style from '../css/projectCard.module.css';
 // @ts-ignore
 import Placeholder from '../images/logo.png';
 
-const ProjectCard = ({ image = Placeholder, name, techs = [], url, repo }) => {
+const ProjectCard = ({ image, name, techs = [], url, repo }) => {
     return (
         <div className={style.card}>
             <div className={style.topLeftBorder} />
@@ -17,7 +17,7 @@ const ProjectCard = ({ image = Placeholder, name, techs = [], url, repo }) => {
 
 
             <div className={style.image}>
-                <img src={image} alt={name} />
+                <img src={image || Placeholder} style={{ objectFit: !image ? 'contain' : 'none' }} alt={name} />
             </div>
             <div className={style.content}>
                 <h3 className={style.name}>{name}</h3>
