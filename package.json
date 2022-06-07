@@ -2,7 +2,7 @@
   "name": "lhdi-portfolio",
   "private": true,
   "description": "My personal portfolio created from Gatsby starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Mohammed E. Baci <elhadi98@gmail.com>",
   "dependencies": {
     "gatsby": "^2.23.12",

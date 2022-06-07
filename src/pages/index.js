@@ -62,10 +62,10 @@ const IndexPage = () => (
             <span>It's me </span>
             <h1 style={{ display: 'inline', fontSize: '1.5em' }}>
               Mohammed E. Baci
-          </h1>
+            </h1>
             <h2 style={{ margin: 0, fontSize: '1.2em', color: '#ffffffcc' }}>
-              Front-End & Mobile developer.
-          </h2>
+              Software engineer.
+            </h2>
             <small><span role='img' aria-label='algeria-arrow' >🇩🇿</span> Algeria.</small>
           </div>
           <p>
@@ -78,7 +78,7 @@ const IndexPage = () => (
         </div>
       </div>
       <div id={style.socialmediaContainer}>
-        <SocialMediaButton url='https://twitter.com/LHD_BC' icon={TwitterIcon} at='LHD_BC' />
+        <SocialMediaButton url='https://twitter.com/iamlhdi' icon={TwitterIcon} at='iamlhdi' />
         <SocialMediaButton url='https://github.com/LHDi' icon={GitHubIcon} at='LHDi' />
         <SocialMediaButton url='https://linkedin.com/in/lhdi' icon={LinkedInIcon} at='LHDi' />
         <SocialMediaButton url='https://medium.com/@lhdi' icon={MediumIcon} at='LHDi' />
