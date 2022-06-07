@@ -21,8 +21,7 @@ jobs:
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: "true"
       - name: Clean install dependencies
-        run: npm ci # or yarn install --frozen-lockfile for yarn
-        # if the above doesn't work, use npm i or yarn
+        run: yarn install --frozen-lockfile
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: "true"
 
